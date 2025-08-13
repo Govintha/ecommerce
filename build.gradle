@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.5.3'
     id 'io.spring.dependency-management' version '1.1.7'
+
 }
 
 group = 'org.example'
@@ -38,10 +39,26 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     runtimeOnly 'com.mysql:mysql-connector-j'
-    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.3.0'
+   // implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.3.0'
     implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.8'
 }
 
 tasks.named('test') {
     useJUnitPlatform()
+}
+
+// if you have any .env file and any configuration it when run test along it does not load it automatically
+// we have to write the script to load value from .env file
+test {
+    doFirst {
+        def envFile = file(".env")
+        if (envFile.exists()) {
+            envFile.eachLine { line ->
+                def parts = line.split("=")
+                if (parts.length == 2) {
+                    environment parts[0], parts[1]
+                }
+            }
+        }
+    }
 }

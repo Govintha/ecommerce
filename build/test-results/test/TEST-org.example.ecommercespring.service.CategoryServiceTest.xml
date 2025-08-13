@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.ecommercespring.service.CategoryServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-08-13T12:16:13.678Z" hostname="DESKTOP-6AK2T76" time="0.378">
+  <properties/>
+  <testcase name="Should return empty list when no category exist" classname="org.example.ecommercespring.service.CategoryServiceTest" time="0.353"/>
+  <testcase name="Create Category" classname="org.example.ecommercespring.service.CategoryServiceTest" time="0.017"/>
+  <testcase name="getAllCategories_Should_Return_AllCategory()" classname="org.example.ecommercespring.service.CategoryServiceTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

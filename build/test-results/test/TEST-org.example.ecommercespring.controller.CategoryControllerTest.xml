@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.ecommercespring.controller.CategoryControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-08-13T12:16:13.210Z" hostname="DESKTOP-6AK2T76" time="0.463">
+  <properties/>
+  <testcase name="simpleTest()" classname="org.example.ecommercespring.controller.CategoryControllerTest" time="0.463"/>
+  <system-out><![CDATA[2025-08-13T17:46:13.650+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2025-08-13T17:46:13.650+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-08-13T17:46:13.654+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

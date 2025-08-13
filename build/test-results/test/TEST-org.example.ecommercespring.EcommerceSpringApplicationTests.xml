@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.ecommercespring.EcommerceSpringApplicationTests" tests="5" skipped="1" failures="0" errors="0" timestamp="2025-08-13T12:16:12.451Z" hostname="DESKTOP-6AK2T76" time="0.734">
+  <properties/>
+  <testcase name="[1] a=2, b=3, sum=5" classname="org.example.ecommercespring.EcommerceSpringApplicationTests" time="0.689"/>
+  <testcase name="[2] a=5, b=3, sum=8" classname="org.example.ecommercespring.EcommerceSpringApplicationTests" time="0.012"/>
+  <testcase name="Addtion" classname="org.example.ecommercespring.EcommerceSpringApplicationTests" time="0.009"/>
+  <testcase name="Test All assertion in one go" classname="org.example.ecommercespring.EcommerceSpringApplicationTests" time="0.013"/>
+  <testcase name="exceptionChack()" classname="org.example.ecommercespring.EcommerceSpringApplicationTests" time="0.001">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[17:45:59.806 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.example.ecommercespring.EcommerceSpringApplicationTests]: EcommerceSpringApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:46:00.036 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.example.ecommercespring.EcommerceSpringApplication for test class org.example.ecommercespring.EcommerceSpringApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.3)
+
+2025-08-13T17:46:01.443+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] o.e.e.EcommerceSpringApplicationTests    : Starting EcommerceSpringApplicationTests using Java 21.0.4 with PID 5724 (started by Windows in C:\Users\Windows\Documents\sanket\EcommerceSpring)
+2025-08-13T17:46:01.445+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] o.e.e.EcommerceSpringApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-08-13T17:46:03.123+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-13T17:46:03.269+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 2 JPA repository interfaces.
+2025-08-13T17:46:04.898+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-13T17:46:05.767+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@97b5e6a
+2025-08-13T17:46:05.773+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-13T17:46:05.894+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/ecommerce_db (MySQL 8.0)
+2025-08-13T17:46:06.067+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 4 migrations (execution time 00:00.086s)
+2025-08-13T17:46:06.106+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema `ecommerce_db`: 4
+2025-08-13T17:46:06.115+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] o.f.core.internal.command.DbMigrate      : Schema `ecommerce_db` is up to date. No migration necessary.
+2025-08-13T17:46:06.344+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-13T17:46:06.530+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-13T17:46:06.629+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-13T17:46:07.220+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-13T17:46:07.332+05:30  WARN 5724 --- [EcommerceSpring] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-13T17:46:07.333+05:30  WARN 5724 --- [EcommerceSpring] [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-13T17:46:07.357+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-13T17:46:09.054+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-13T17:46:09.119+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13T17:46:09.744+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-13T17:46:11.546+05:30  WARN 5724 --- [EcommerceSpring] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-13T17:46:12.326+05:30  INFO 5724 --- [EcommerceSpring] [    Test worker] o.e.e.EcommerceSpringApplicationTests    : Started EcommerceSpringApplicationTests in 11.648 seconds (process running for 13.784)
+Before All class 
+Before Each class 
+After Each class 
+Before Each class 
+After Each class 
+Before Each class 
+After Each class 
+Before Each class 
+After Each class 
+After All class 
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\Windows\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.17.6\17b32fd9f57deef02842f7f05abc4ad8127fe34e\byte-buddy-agent-1.17.6.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
